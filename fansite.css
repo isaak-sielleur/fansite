@@ -1,0 +1,627 @@
+/*---------------------------------------------------------------------------------------------------- GENERAL ----------------------------------------------------------------------------------------------------*/
+
+.imgheader {
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+    border-radius: 10px;
+}
+
+.imagenav {
+    width: 10%;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: lawngreen;
+    font-size: 90%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-style: solid;
+    position: fixed;
+    bottom: 0;
+    top: -2;
+    right: -1;
+}
+
+.navmenu {
+    width: 300px;
+    background: white;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-clip-path: circle(24px at 30px 24px);
+    clip-path: circle(24px at 32px 24px);
+    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+}
+
+.navmenu:hover {
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.75s;
+    transition-duration: 0.75s;
+    -webkit-clip-path: circle(390px at 225px 24px);
+    clip-path: circle(390px at 150px 24px);
+}
+
+.amenu {
+    display: block;
+    line-height: 50px;
+    padding: 0 20px;
+    color: inherit;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.amenufooter {
+    display: block;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    line-height: 50px;
+    color: inherit;
+    padding: 0 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.amenu:hover {
+    background: #ffe082;
+}
+
+.amenu:active {
+    background: #ffca28;
+}
+
+.navicon {
+    padding: 23px 20px;
+    cursor: pointer;
+    -webkit-transform-origin: 32px 24px;
+    -ms-transform-origin: 32px 24px;
+    transform-origin: 32px 24px;
+}
+
+.navicon .divmenu {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+}
+
+.navicon .divmenu:before,
+.navicon .divmenu:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+    position: absolute;
+}
+
+.navicon .divmenu:before {
+    top: -7px;
+}
+
+.navicon .divmenu:after {
+    top: 7px;
+}
+
+
+/*------------------------------------------------------------------------------------------- PAGE D'ACCUEIL -------------------------------------------------------------------------------------------*/
+
+.bodyaccueil {
+    background-color: #333;
+}
+
+.aaccueil {
+    font-family: 'Libre Baskerville', serif;
+    margin-top: -5px;
+}
+
+.paccueil {
+    color: whitesmoke;
+    font-family: 'Gupter', serif;
+    font-size: 190%;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 2em rgb(0, 0, 0), 0 0 1.2em rgb(0, 0, 0);
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.text {
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.effect01 {
+    color: #fefefe;
+    text-shadow: 0px 1px 0px #c0c0c0, 0px 2px 0px #b0b0b0, 0px 3px 0px #a0a0a0, 0px 4px 0px #909090, 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+/*-------------------------------------------------------------------------------- PAGE DE PRESENTATION DE LA REALISATION --------------------------------------------------------------------------------*/
+
+.bodyecole {
+    background-image: url(Images/ecole.jpg);
+    background-position: center;
+}
+
+.sectionecole {
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Gupter', serif;
+    font-size: 190%;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 2em rgb(0, 0, 0), 0 0 1.2em rgb(0, 0, 0);
+}
+
+
+/*-------------------- SLIDE REAL --------------------*/
+
+.slidesreal {
+    padding: 0;
+    width: 909px;
+    height: 520px;
+    display: block;
+    margin: 30 auto;
+    position: relative;
+    background-color: rgba(255, 255, 255, .6);
+    text-shadow: 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0), 1px 0px 0 rgb(0, 0, 0), -1px 0px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 0px 2px 0 rgb(0, 0, 0), 0px -2px 0 rgb(0, 0, 0), 2px 0px 0 rgb(0, 0, 0), -2px 0px 0 rgb(0, 0, 0), 2px 2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0), -2px 2px 0 rgb(0, 0, 0), -2px -2px 0 rgb(0, 0, 0);
+    -webkit-text-shadow: 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0), 1px 0px 0 rgb(0, 0, 0), -1px 0px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 0px 2px 0 rgb(0, 0, 0), 0px -2px 0 rgb(0, 0, 0), 2px 0px 0 rgb(0, 0, 0), -2px 0px 0 rgb(0, 0, 0), 2px 2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0), -2px 2px 0 rgb(0, 0, 0), -2px -2px 0 rgb(0, 0, 0);
+}
+
+.slidereal p {
+    font-family: 'Girassol', cursive;
+    color: whitesmoke;
+    font-size: 140%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.slidereal h1 {
+    font-family: 'Bree Serif', serif;
+    color: whitesmoke;
+    font-size: 170%;
+    text-align: center;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.slidesreal * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slidesreal input {
+    display: none;
+}
+
+.slide-containerreal {
+    display: block;
+}
+
+.slidereal {
+    top: 0;
+    opacity: 0;
+    width: 909px;
+    height: 420px;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+
+.navreal label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slidereal:hover+.navreal label {
+    opacity: 0.5;
+}
+
+.navreal label:hover {
+    opacity: 1;
+}
+
+.navreal .next {
+    right: 0;
+}
+
+input:checked+.slide-containerreal .slidereal {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked+.slide-containerreal .navreal label {
+    display: block;
+}
+
+.nav-dotsreal {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dotsreal .nav-dotreal {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dotsreal .nav-dotreal:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked~.nav-dotsreal label#img-dot-1,
+input#img-2:checked~.nav-dotsreal label#img-dot-2,
+input#img-3:checked~.nav-dotsreal label#img-dot-3,
+input#img-4:checked~.nav-dotsreal label#img-dot-4,
+input#img-5:checked~.nav-dotsreal label#img-dot-5,
+input#img-6:checked~.nav-dotsreal label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/*-------------------------------------------------------------------------------- PAGE DE PRESENTATION DE L'ACTUALITE --------------------------------------------------------------------------------*/
+
+.bodyperso {
+    background-image: url(Images/personnages.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.policeperso {
+    width: 50%;
+    margin-top: -300px;
+    margin-left: 300px;
+}
+
+
+/*-------------------- DEROULANT DE L'ACTUALITE --------------------*/
+
+.ac-container {
+    text-align: left;
+    display: block;
+    margin-right: 260px;
+    margin-top: 52px;
+}
+
+.ac-container label {
+    padding: 2% 20px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    color: #9d9c9c;
+    background: #212936;
+    font-style: normal;
+}
+
+.ac-container label:hover {
+    background: #171c26;
+}
+
+.ac-container input:checked+label,
+.ac-container input:checked+label:hover {
+    background: #171c26;
+    color: #00cc83;
+}
+
+.ac-container label:hover:after,
+.ac-container input:checked+label:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 13px;
+    top: 25%;
+}
+
+.ac-container input {
+    display: none;
+}
+
+.ac-container article {
+    background: #212936;
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+
+.ac-container input:checked~article {
+    transition: height 0.5s ease-in-out;
+}
+
+.ac-container,
+.list-l article p {
+    font-style: italic;
+    color: #777;
+    line-height: 23px;
+    font-size: 14px;
+}
+
+.ac-container input:checked~article.ac-small {
+    height: 240px;
+}
+
+.ac-container input:checked~article.ac-medium {
+    height: 280px;
+}
+
+.ac-container input:checked~article.ac-large {
+    height: 450px;
+}
+
+.ac-container input:checked~article.ac-ex-large {
+    height: 2000px;
+}
+
+.p2-legal {
+    font-style: normal;
+    color: white;
+    line-height: 23px;
+    font-size: 14px;
+    padding: 20px !important;
+}
+
+
+/*-------------------------------------------------------------------------------- PAGE EVENEMENTS --------------------------------------------------------------------------------*/
+
+.bodyevent {
+    background-image: url(Images/event.jpg);
+    background-position: center;
+}
+
+
+/*-------------------- PANNEAU EVENEMENT --------------------*/
+
+.nav_tabs {
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: #363b48;
+    position: relative;
+}
+
+.nav_tabs .ulevent {
+    list-style: none;
+}
+
+.nav_tabs .ulevent .lievent {
+    float: left;
+}
+
+.tab_label {
+    display: block;
+    background-color: #363b48;
+    padding: 25px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav_tabs .rd_tab {
+    display: none;
+    position: absolute;
+}
+
+.nav_tabs .rd_tab:checked~.labelevent {
+    background-color: #e54e43;
+    color: #fff;
+}
+
+.tab-content {
+    border-top: solid 5px #e54e43;
+    background-color: #363b48;
+    display: none;
+    position: absolute;
+    height: 320px;
+    width: 600px;
+    left: 0;
+}
+
+.rd_tab:checked~.tab-content {
+    display: block;
+}
+
+.tab-content .articleevent {
+    padding: 10px;
+    color: #fff;
+}
+
+
+/*-------------------------------------------------------------------------------- PAGE DE SLIDE PHOTOS ET VIDEO --------------------------------------------------------------------------------*/
+
+
+/*-------------------- SLIDE PHOTOS ET VIDEO --------------------*/
+
+.sectionappercu {
+    margin-top: 40px;
+}
+
+.video {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.imagetournage1 {
+    margin-top: 40px;
+    margin-left: 160px;
+    width: 50%;
+}
+
+.imagetournage2 {
+    margin-top: 100px;
+    margin-left: 160px;
+    width: 50%;
+}
+
+.imagetournage3 {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 70%;
+}
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide-container {
+    display: block;
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover+.nav label {
+    opacity: 0.5;
+}
+
+.nav label:hover {
+    opacity: 1;
+}
+
+.nav .next {
+    right: 0;
+}
+
+input:checked+.slide-container .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked+.slide-container .nav label {
+    display: block;
+}
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked~.nav-dots label#img-dot-1,
+input#img-2:checked~.nav-dots label#img-dot-2,
+input#img-3:checked~.nav-dots label#img-dot-3,
+input#img-4:checked~.nav-dots label#img-dot-4,
+input#img-5:checked~.nav-dots label#img-dot-5,
+input#img-6:checked~.nav-dots label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8);
+}
